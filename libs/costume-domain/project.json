@@ -1,0 +1,9 @@
+{
+  "name": "costume-domain",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/costume-domain/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project costume-domain --web",
+  "targets": {}
+}

@@ -1,0 +1,62 @@
+<main class="page-shell">
+  <header class="page-header">
+    <p class="eyebrow">Nx + Angular + Kendo UI</p>
+    <h1>Find your Halloween costume</h1>
+    <p class="intro">
+      Search by an idea, not only by a character name. Ask for more detail
+      without leaving the grid.
+    </p>
+  </header>
+
+  <section class="grid-panel" aria-label="Halloween costume catalog">
+    <kendo-grid
+      [kendoGridBinding]="gridData()"
+      [pageSize]="8"
+      [pageable]="true"
+      [sortable]="true"
+    >
+      <kendo-toolbar (input)="onSmartBoxInput($event)">
+        <kendo-grid-smartbox-tool
+          [searchMode]="false"
+          [semanticSearchMode]="semanticSearchSettings"
+          activeMode="semanticSearch"
+          (semanticSearch)="onSemanticSearch($event)"
+        />
+      </kendo-toolbar>
+
+      <kendo-grid-column field="character" title="Character" [width]="180" />
+      <kendo-grid-column field="name" title="Costume" [width]="220" />
+      <kendo-grid-column
+        field="aiAssistedInfo"
+        title="AI costume insight"
+        [width]="320"
+      >
+        <ng-template kendoGridCellTemplate let-dataItem>
+          @if (dataItem.aiAssistedInfo) {
+            <span>{{ dataItem.aiAssistedInfo }}</span>
+          } @else {
+            <span class="muted">Ask a question to add an insight.</span>
+          }
+        </ng-template>
+      </kendo-grid-column>
+      <kendo-grid-column title="Assistant" [width]="120">
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <button
+            #anchor
+            kendoButton
+            fillMode="flat"
+            themeColor="primary"
+            (click)="onAskAI(dataItem, anchor.element)"
+          >
+            Ask AI
+          </button>
+        </ng-template>
+      </kendo-grid-column>
+    </kendo-grid>
+  </section>
+
+  <p class="demo-note">
+    This runnable demo uses local sample vectors and a rule-based assistant.
+    Replace those services with your embedding and AI APIs for production.
+  </p>
+</main>
