@@ -149,8 +149,8 @@ export function App() {
             />
             <GridColumn
               field="assistant"
-              title="Assistant"
-              width="120px"
+              title="AI Column Assistant"
+              width="180px"
               cells={{ data: AssistantCell }}
             />
           </Grid>

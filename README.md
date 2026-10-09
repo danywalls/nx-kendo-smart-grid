@@ -47,8 +47,9 @@ In either app:
 2. Search for `friendly rock alien`. Korg should appear.
 3. Search for `gothic girl with black braids`. Wednesday Addams should appear.
 4. Clear the search. All three costumes should return.
-5. Click **Ask AI** on a row. Try asking how to make the costume with foam.
-   The prompt should show a local answer, and the row should display it.
+5. Click **Ask AI** in the **AI Column Assistant** column. Try asking how to
+   make the costume with foam. The prompt should show a local answer, and the
+   row should display it.
 
 ## Build both apps
 
@@ -71,7 +72,8 @@ To build only one app, use `npm run build:angular` or `npm run build:react`.
 The workspace uses Nx 23.3, Angular 22.1, Kendo UI for Angular 25.3,
 React 19.2, and KendoReact 16.2.
 
-The screenshot assets in the two app folders match the two experiences:
+The screenshot assets in the two app folders match the two experiences and the
+AI Column Assistant flow:
 `apps/react-smart-grid/screenshots/semantic-search-online-store.png` shows the
 customer store, and
 `apps/angular-smart-grid/screenshots/row-ai-assistant-internal-app.png` shows
