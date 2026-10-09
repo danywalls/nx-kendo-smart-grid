@@ -62,9 +62,17 @@ To build only one app, use `npm run build:angular` or `npm run build:react`.
 
 ## Workspace layout
 
-- `apps/angular-smart-grid` contains the Kendo UI for Angular app.
-- `apps/react-smart-grid` contains the KendoReact app.
+- `apps/angular-smart-grid` contains the internal store app for employees,
+  built with Kendo UI for Angular.
+- `apps/react-smart-grid` contains the online costume store for customers,
+  built with KendoReact.
 - `libs/costume-domain` contains the shared catalog and demo logic.
 
 The workspace uses Nx 23.3, Angular 22.1, Kendo UI for Angular 25.3,
 React 19.2, and KendoReact 16.2.
+
+The screenshot assets in the two app folders match the two experiences:
+`apps/react-smart-grid/screenshots/semantic-search-online-store.png` shows the
+customer store, and
+`apps/angular-smart-grid/screenshots/row-ai-assistant-internal-app.png` shows
+the employee intranet app.

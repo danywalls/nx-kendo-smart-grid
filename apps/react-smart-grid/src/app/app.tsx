@@ -117,11 +117,11 @@ export function App() {
     <UpdateInsightContext.Provider value={updateInsight}>
       <main className="page-shell">
         <header className="page-header">
-          <p className="eyebrow">Nx + React + KendoReact</p>
-          <h1>Find your Halloween costume</h1>
+          <p className="eyebrow">Online costume store · React + KendoReact</p>
+          <h1>Find a costume for Halloween</h1>
           <p className="intro">
             Search by an idea, not only by a character name. Ask for more detail
-            without leaving the grid.
+            without leaving the store.
           </p>
         </header>
 
