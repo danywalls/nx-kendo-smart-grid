@@ -48,6 +48,7 @@
     "@nx/vite": "23.3.0",
     "@nx/web": "23.3.0",
     "@nx/workspace": "23.3.0",
+    "@progress/kendo-licensing": "^1.11.3",
     "@schematics/angular": "~22.1.0",
     "@swc/cli": "~0.8.1",
     "@swc/core": "~1.15.5",

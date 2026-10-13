@@ -23,6 +23,19 @@ cd nx-kendo-smart-grid
 npm ci
 ```
 
+From the workspace root, the `nx-kendo-smart-grid` directory where you ran
+`npm ci`, activate your Telerik license or trial before starting either app:
+
+```bash
+npx kendo-ui-license activate
+```
+
+The command looks for a key in your Telerik home folder or environment
+variables. If no key is active, the apps still run, but Kendo UI displays a
+watermark and a license message in the browser. You can
+[start a 30-day trial](https://www.telerik.com/try/kendo-angular-ui) without a
+credit card.
+
 Start either app from the workspace root. Use separate terminals to run both
 at the same time:
 
